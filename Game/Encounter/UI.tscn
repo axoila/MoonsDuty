@@ -1,0 +1,152 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://Encounter/UI.gd" type="Script" id=1]
+[ext_resource path="res://UI/SelectionBox.tres" type="StyleBox" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Selection_Outline.png" type="Texture" id=4]
+
+[node name="UI" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+time_start = Vector2( 4, 4 )
+time_end = Vector2( 916, 4 )
+
+[node name="Panel" type="Panel" parent="."]
+
+anchor/right = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 16.0
+margin/right = 32.0
+margin/bottom = 64.0
+custom_styles/panel = ExtResource( 2 )
+
+[node name="TextureFrame" type="TextureFrame" parent="Panel"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 4.0
+margin/right = 44.0
+margin/bottom = 44.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 0
+
+[node name="Panel2" type="Panel" parent="."]
+
+anchor/top = 1
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 25.0
+margin/top = 165.0
+margin/right = 25.0
+margin/bottom = 29.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel2"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+use_top_left = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel2/CenterContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 269.0
+margin/top = 4.0
+margin/right = 704.0
+margin/bottom = 131.0
+alignment = 0
+
+[node name="Button0" type="Button" parent="Panel2/CenterContainer/HBoxContainer"]
+
+rect/min_size = Vector2( 150, 100 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 150.0
+margin/bottom = 127.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "POCKET_SAND"
+flat = false
+
+[node name="TextureFrame" type="TextureFrame" parent="Panel2/CenterContainer/HBoxContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 154.0
+margin/top = 0.0
+margin/right = 281.0
+margin/bottom = 127.0
+texture = ExtResource( 4 )
+stretch_mode = 0
+
+[node name="Button1" type="Button" parent="Panel2/CenterContainer/HBoxContainer"]
+
+rect/min_size = Vector2( 150, 100 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 285.0
+margin/top = 0.0
+margin/right = 435.0
+margin/bottom = 127.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "ABILITY"
+flat = false
+
+[node name="icon" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 16.0
+margin/top = 73.0
+margin/right = 80.0
+margin/bottom = 137.0
+texture = ExtResource( 3 )
+modulate = Color( 1, 0, 0, 1 )
+stretch_mode = 0
+
+
